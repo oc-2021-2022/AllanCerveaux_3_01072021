@@ -11,7 +11,7 @@
 [Oh My Food](https://oc-2021-2022.github.io/AllanCerveaux_3_XX072021/) Site 100% mobile qui répertorie les menus de restaurants gastronomiques.
 
 <a href="https://github.com/oc-2021-2022/AllanCerveaux_3_XX072021/blob/master/maquettes/Accueil.png"><img src="./maquettes/Accueil.png" alt="Home Template" height="500" /></a>
-<a href="https://github.com/oc-2021-2022/AllanCerveaux_3_XX072021/blob/master/maquettes/Menu%20-%20A╠Ç%20la%20franc╠ºaise.png"><img src="./maquettes/Menu%20-%20A╠Ç%20la%20franc╠ºaise.png" alt="Restaurant Template Example" height="500" /></a>
+<a href="https://github.com/oc-2021-2022/AllanCerveaux_3_XX072021/blob/main/maquettes/Menu%20-%20A%E2%95%A0%C3%87%20la%20franc%E2%95%A0%C2%BAaise.png"><img src="./maquettes/Menu%20-%20A╠Ç%20la%20franc╠ºaise.png" alt="Restaurant Template Example" height="500" /></a>
 
 ## Requirement 🧰 
 ___
