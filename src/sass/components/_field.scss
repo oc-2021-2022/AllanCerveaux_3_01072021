@@ -1,0 +1,28 @@
+.field {
+  background-color: $light-grey;
+  padding: ms(0) ms(3);
+  .control {
+    display: flex;
+    &.has-icon {
+      justify-content: center;
+      align-items: center;
+      & > .input {
+        width: 50%;
+        padding-left: ms(0);
+      }
+      & > .icon {
+      }
+      & > .icon.is-left {
+        order: -1;
+      }
+      & > .icon.is-right {
+        order: 1;
+      }
+    }
+    input[type='text'].input {
+      border: none;
+      background-color: transparent;
+      @include font-style(ms(0), 600);
+    }
+  }
+}

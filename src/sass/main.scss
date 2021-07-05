@@ -1,3 +1,5 @@
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
 // Import configuration helpers
 @import './helpers/variables', './helpers/mixins', './helpers/functions';
 
@@ -5,7 +7,9 @@
 @import './base/normalize', './base/typograpy', './base/default';
 
 // Import Layout
+@import './layout/text-sizing';
 
 // Import Component
+@import './components/navbar', './components/field';
 
 // Import specific page
