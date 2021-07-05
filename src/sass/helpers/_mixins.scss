@@ -52,3 +52,22 @@
     background-size: $width $height;
   }
 }
+
+/**
+ * Document this !
+ */
+@mixin box-shadow($left, $top, $blur, $color, $inset: false) {
+  @if $inset {
+    box-shadow: inset $left $top $blur $color;
+  } @else {
+    box-shadow: $left $top $blur $color;
+  }
+}
+
+/**
+ *
+ */
+@mixin font-style($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
