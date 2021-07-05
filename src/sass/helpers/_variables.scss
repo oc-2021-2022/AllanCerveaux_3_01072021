@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.										 |
+// -----------------------------------------------------------------------------
+
+// Font Logo & Title
+$text-font-title: 'Shrikhand';
+
+// Font text
+$text-font-stack: 'Roboto', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+// Main Color
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$accent-color: #99e2d0;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+
+// Secondary color
+$white: #fff;
+$black: #000;
+
+$grey: #bdbdbd;
+$light-grey: #e0e0e0;
+$dark-grey: #616161;
+
+// Breakpoint map
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px
+);
