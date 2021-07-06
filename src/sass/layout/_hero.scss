@@ -1,0 +1,16 @@
+.hero {
+  background-color: $lighter-grey;
+  height: 40vh;
+  &.has-centered {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  & > .hero-body {
+    padding: ms(0) ms(2);
+  }
+  & > .hero-footer {
+    margin: ms(0) 0;
+  }
+}
