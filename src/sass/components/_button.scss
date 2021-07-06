@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+  color: $primary-text-color;
+}
+.button {
+  background-color: $white;
+  padding: ms(0) ms(1);
+  font-weight: 700;
+  &.is-rounded {
+    border-radius: 50px;
+  }
+}
