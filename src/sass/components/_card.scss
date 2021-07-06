@@ -1,0 +1,45 @@
+.cards {
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  &.cards-vertical {
+    flex-direction: column;
+  }
+}
+.card {
+  background-color: $white;
+  @include box-shadow(5px, 10px, 8px, rgba(0, 0, 0, 0.1));
+  border-radius: ms(0);
+  &.steps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .step {
+      position: absolute;
+      left: ms(-1);
+      padding: 0.4em 0.7em;
+      background-color: $primary-color;
+      border-radius: ms(1);
+      color: white;
+      font-weight: 900;
+    }
+  }
+  & > .card-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: ms(-2) ms(1);
+    p {
+      margin-left: ms(0);
+    }
+    span.icon {
+      color: $secondary-text-color;
+    }
+  }
+  @include on-event() {
+    background-color: $primary-color-alpha-30;
+    span.icon {
+      color: $primary-color;
+    }
+  }
+}
