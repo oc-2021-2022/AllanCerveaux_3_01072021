@@ -1,0 +1,22 @@
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 ms(-1);
+  font-size: ms(0);
+  &.is-small {
+    font-size: ms(-1);
+  }
+  &.is-medium {
+    font-size: ms(1);
+  }
+  &.is-large {
+    font-size: ms(2);
+  }
+  &.is-left {
+    order: -1;
+  }
+  &.is-right {
+    order: 5;
+  }
+}

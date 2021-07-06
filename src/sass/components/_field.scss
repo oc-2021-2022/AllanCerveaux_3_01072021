@@ -10,14 +10,6 @@
         width: 50%;
         padding-left: ms(0);
       }
-      & > .icon {
-      }
-      & > .icon.is-left {
-        order: -1;
-      }
-      & > .icon.is-right {
-        order: 1;
-      }
     }
     input[type='text'].input {
       border: none;
