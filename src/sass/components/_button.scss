@@ -6,6 +6,7 @@ a {
   background-color: $white;
   padding: ms(0) ms(1);
   font-weight: 700;
+  @include box-shadow(0, 4px, 8px, $grey);
   &.is-rounded {
     border-radius: 50px;
   }
