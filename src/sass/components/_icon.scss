@@ -1,6 +1,7 @@
 .icon {
   font-size: ms(0);
-  margin: 0 ms(-4) 0 ms(0);
+  margin: 0 ms(0) 0 ms(1);
+
   &.is-small {
     font-size: ms(-1);
   }
@@ -15,5 +16,9 @@
   }
   &.is-right {
     order: 5;
+  }
+
+  @include screen('(max-width: 320px)') {
+    margin-right: ms(-2);
   }
 }
