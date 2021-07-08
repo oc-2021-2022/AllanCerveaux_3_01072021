@@ -8,9 +8,10 @@
 
 // Import Layout
 @import './layout/hero', './layout/section';
-
 // Import Component
 @import './components/navbar', './components/field', './components/button', './components/title',
   './components/text-sizing', './components/card', './components/icon';
 
+// Import Animations
+@import './animations/heart_pop';
 // Import specific page
