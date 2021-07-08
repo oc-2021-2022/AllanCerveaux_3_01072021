@@ -34,6 +34,9 @@
   }
   @include screen('tablet') {
     width: 45%;
+    &.card-action {
+      width: 90%;
+    }
   }
 }
 
@@ -92,13 +95,18 @@
   align-items: start !important;
   padding: 0 ms(0);
 }
-
-.step {
-  position: absolute;
-  left: ms(-1);
-  padding: 0.4em 0.7em;
-  background-color: $primary-color;
-  border-radius: ms(1);
-  color: white;
-  font-weight: 900;
+.steps {
+  position: relative;
+  .step {
+    position: absolute;
+    right: 95%;
+    padding: 0.4em 0.7em;
+    background-color: $primary-color;
+    border-radius: ms(1);
+    color: white;
+    font-weight: 900;
+    @include screen('tablet') {
+      right: 97%;
+    }
+  }
 }
