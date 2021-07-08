@@ -1,45 +1,87 @@
-.cards {
-  height: 40vh;
-  display: flex;
-  justify-content: space-around;
-  &.cards-vertical {
-    flex-direction: column;
+%card-item {
+  &:first-child {
+    border-top-left-radius: ms(0);
+    border-top-right-radius: ms(0);
+  }
+  &:last-child {
+    border-bottom-left-radius: ms(0);
+    border-bottom-right-radius: ms(0);
   }
 }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
 .card {
+  width: 100%;
+  margin-bottom: ms(1);
+  &.card-action {
+    @include on-event() {
+      .card-body {
+        background-color: $primary-color-alpha-30;
+      }
+      span.icon {
+        color: $primary-color;
+      }
+    }
+  }
+}
+.card-image {
+  @extend %card-item;
+  div.image {
+    height: ms(6);
+    border-radius: inherit;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  span.toast {
+    position: absolute;
+    right: ms(2);
+    margin: ms(1) 0;
+    padding: ms(-1);
+    font-weight: 900;
+    color: $accent-color-darken;
+    border-radius: ms(-2);
+    background-color: $accent-color;
+  }
+}
+.card-body {
+  @extend %card-item;
+  @include box-shadow(0, 10px, 8px, rgba(0, 0, 0, 0.1));
+  width: inherit;
+  padding: ms(0) 0;
+  display: flex;
+  align-items: center;
   background-color: $white;
-  @include box-shadow(5px, 10px, 8px, rgba(0, 0, 0, 0.1));
-  border-radius: ms(0);
-  &.steps {
+  .content {
+    width: inherit;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    .step {
-      position: absolute;
-      left: ms(-1);
-      padding: 0.4em 0.7em;
-      background-color: $primary-color;
-      border-radius: ms(1);
-      color: white;
-      font-weight: 900;
-    }
-  }
-  & > .card-body {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: ms(-2) ms(1);
-    p {
-      margin-left: ms(0);
+    justify-content: space-evenly;
+    .title {
+      margin: ms(-2) 0;
     }
     span.icon {
-      color: $secondary-text-color;
+      color: $dark-grey;
     }
   }
-  @include on-event() {
-    background-color: $primary-color-alpha-30;
-    span.icon {
-      color: $primary-color;
-    }
-  }
+}
+.has-vertical {
+  flex-direction: column;
+  align-items: start !important;
+  padding: 0 ms(0);
+}
+.step {
+  position: absolute;
+  left: ms(-1);
+  padding: 0.4em 0.7em;
+  background-color: $primary-color;
+  border-radius: ms(1);
+  color: white;
+  font-weight: 900;
 }
