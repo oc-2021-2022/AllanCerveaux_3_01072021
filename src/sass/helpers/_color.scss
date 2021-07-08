@@ -1,6 +1,9 @@
 .gradient-primary {
   background: linear-gradient(160deg, $secondary-color, $primary-color);
   color: $white;
+  @include on-event() {
+    background: linear-gradient(160deg, #ff79da95, $primary-color);
+  }
 }
 
 .primary-color {
