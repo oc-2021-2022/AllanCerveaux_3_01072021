@@ -12,7 +12,13 @@
 .cards {
   display: flex;
   flex-direction: column;
+  @include screen('tablet') {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
+
 .card {
   width: 100%;
   margin-bottom: ms(1);
@@ -26,10 +32,16 @@
       }
     }
   }
+  @include screen('tablet') {
+    width: 45%;
+  }
 }
+
 .card-image {
   @extend %card-item;
-  div.image {
+  figure.image {
+    position: relative;
+    margin: 0;
     height: ms(6);
     border-radius: inherit;
     overflow: hidden;
@@ -38,44 +50,49 @@
       height: inherit;
       object-fit: cover;
     }
-  }
-  span.toast {
-    position: absolute;
-    right: ms(2);
-    margin: ms(1) 0;
-    padding: ms(-1);
-    font-weight: 900;
-    color: $accent-color-darken;
-    border-radius: ms(-2);
-    background-color: $accent-color;
+    figcaption.toast {
+      position: absolute;
+      top: 10%;
+      right: 5%;
+      padding: ms(-2) ms(-1);
+      font-weight: 900;
+      color: $accent-color-darken;
+      border-radius: 3px;
+      background-color: $accent-color;
+    }
   }
 }
+
 .card-body {
   @extend %card-item;
   @include box-shadow(0, 10px, 8px, rgba(0, 0, 0, 0.1));
-  width: inherit;
   padding: ms(0) 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: $white;
   .content {
     width: inherit;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     .title {
       margin: ms(-2) 0;
     }
     span.icon {
       color: $dark-grey;
     }
+    p {
+      font-size: ms(0);
+    }
   }
 }
+
 .has-vertical {
   flex-direction: column;
   align-items: start !important;
   padding: 0 ms(0);
 }
+
 .step {
   position: absolute;
   left: ms(-1);
