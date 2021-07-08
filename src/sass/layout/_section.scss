@@ -1,4 +1,9 @@
 .section {
   padding: 0 ms(1);
   margin: ms(2) 0;
+  & > .title {
+    @include screen('tablet') {
+      padding-left: 1em;
+    }
+  }
 }
