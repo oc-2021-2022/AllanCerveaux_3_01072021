@@ -1,9 +1,11 @@
 .operation {
-  @include screen('desktop') {
+  @include screen('(min-width: 1440px)') {
     & > .cards {
-      width: ms(10);
       flex-direction: column;
       align-items: center;
+      .card {
+        width: 30%;
+      }
     }
   }
 }
