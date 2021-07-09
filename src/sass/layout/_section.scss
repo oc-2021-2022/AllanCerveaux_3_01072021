@@ -1,15 +1,28 @@
+section {
+  @for $i from 1 through 3 {
+    @if ($i%2 != 0) {
+      &:nth-child(#{$i}) {
+        background-color: $lighter-grey;
+      }
+    }
+  }
+}
+
 .section {
   padding: 0 ms(1);
   margin: ms(2) 0;
-  & > .title {
-    @include screen('tablet') {
+  @include screen('tablet') {
+    padding: 0 ms(1);
+    & > .title {
       padding-left: 1em;
     }
   }
   @include screen('desktop') {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+  }
+  @include screen('(min-width: 1440px)') {
+    padding: 0 ms(6);
   }
 }

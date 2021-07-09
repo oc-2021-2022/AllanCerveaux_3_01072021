@@ -54,6 +54,9 @@
     height: ms(6);
     border-radius: inherit;
     overflow: hidden;
+    @include screen('desktop') {
+      height: ms(8);
+    }
     img {
       width: 100%;
       height: inherit;
@@ -113,6 +116,9 @@
     font-weight: 900;
     @include screen('tablet') {
       right: 97%;
+    }
+    @include screen('desktop') {
+      right: 98%;
     }
   }
 }
