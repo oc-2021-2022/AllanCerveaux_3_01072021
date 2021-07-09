@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 /// Event wrapper
 @mixin on-event($self: false) {
   @if $self {
@@ -70,4 +72,12 @@
 @mixin font-style($font-size, $font-weight) {
   font-size: $font-size;
   font-weight: $font-weight;
+}
+
+@mixin transition {
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: math.div($i, 10) + 2.7s;
+    }
+  }
 }
