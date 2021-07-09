@@ -1,0 +1,39 @@
+.loading > div {
+  height: 50px;
+  width: 50px;
+  margin: -25px 0 0 -25px;
+  border: 4px $secondary-color-alpha-40 solid;
+  border-top: 4px $primary-color solid;
+  border-radius: 50%;
+  animation: spin 1s 3 both linear;
+}
+
+.loading {
+  display: block;
+  position: absolute;
+  left: 50%;
+  animation: hide 0.1s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
+  align-self: center;
+  z-index: 2;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+// hack to hide spinner
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

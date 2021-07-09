@@ -1,0 +1,25 @@
+@mixin transition {
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: ($i/10) + 2.7s;
+    }
+  }
+}
+
+.slide-in {
+  .card {
+    animation: slide-in 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    @include transition();
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
