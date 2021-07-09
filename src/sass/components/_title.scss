@@ -1,0 +1,14 @@
+.title,
+.subtitle {
+  word-break: break-word;
+}
+
+.title {
+  @include font-style(ms(0), 900);
+}
+
+.subtitle {
+  @include font-style(ms(0), 300);
+  color: $light-grey;
+  line-height: ms(1);
+}

@@ -1,15 +1,18 @@
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 // Import configuration helpers
-@import './helpers/variables', './helpers/mixins', './helpers/functions';
+@import './helpers/variables', './helpers/mixins', './helpers/functions', './helpers/color';
 
 // Import Base
 @import './base/normalize', './base/typograpy', './base/default';
 
 // Import Layout
-@import './layout/text-sizing';
-
+@import './layout/hero', './layout/section', './layout/operation';
 // Import Component
-@import './components/navbar', './components/field';
+@import './components/navbar', './components/field', './components/button', './components/title',
+  './components/text-sizing', './components/card', './components/icon';
+
+// Import Animations
+@import './animations/heart-pop', './animations/loading-spinner', './animations/slide-in';
 
 // Import specific page

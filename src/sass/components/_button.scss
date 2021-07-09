@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: $primary-text-color;
+}
+.button {
+  background-color: $white;
+  padding: ms(0) ms(1);
+  font-weight: 700;
+  @include box-shadow(0, 1px, 8px, $grey);
+  @include on-event() {
+    @include box-shadow(0, 5px, 8px, $grey);
+  }
+  &.is-rounded {
+    border-radius: 50px;
+  }
+}
