@@ -6,4 +6,10 @@
       padding-left: 1em;
     }
   }
+  @include screen('desktop') {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }

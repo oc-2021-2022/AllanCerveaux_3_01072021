@@ -12,10 +12,13 @@
 .cards {
   display: flex;
   flex-direction: column;
-  @include screen('tablet') {
+  @include screen('(min-width: 768px)') {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  @include screen('desktop') {
+    justify-content: space-between;
   }
 }
 
@@ -37,6 +40,9 @@
     &.card-action {
       width: 90%;
     }
+  }
+  @include screen('desktop') {
+    width: 45%;
   }
 }
 
