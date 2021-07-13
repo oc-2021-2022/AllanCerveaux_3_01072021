@@ -4,8 +4,12 @@
   justify-content: space-between;
   background-color: $white;
   border-radius: ms(0);
+  overflow: hidden;
+  .content,
+  .price {
+    margin: ms(-1) ms(0);
+  }
   .content {
-    margin: ms(0);
     .title,
     .description {
       overflow: hidden;
@@ -22,9 +26,7 @@
       font-weight: 300;
     }
   }
-  overflow: hidden;
   .price {
-    margin: ms(0);
     align-self: flex-end;
   }
 }
