@@ -1,9 +1,21 @@
 .navbar {
-  padding: ms(1) ms(0);
+  padding: ms(0);
   position: relative;
   z-index: 30;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   background-color: $white;
   @include box-shadow(1px, 1px, 10px, $grey);
+  .navbar-brand {
+    margin: 0 auto;
+  }
+  .back-arrow {
+    font-size: ms(1);
+  }
+  @include screen('desktop') {
+    .back-arrow > i.fa-arrow-left::before {
+      content: '';
+    }
+  }
 }
