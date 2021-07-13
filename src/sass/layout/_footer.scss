@@ -1,0 +1,16 @@
+footer {
+  padding: ms(1);
+  background-color: $primary-text-color;
+  img {
+    width: ms(5);
+    filter: invert(1);
+  }
+  nav {
+    margin-top: ms(1);
+    a {
+      display: block;
+      color: white;
+      margin: ms(0) 0;
+    }
+  }
+}
