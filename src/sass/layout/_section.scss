@@ -11,6 +11,7 @@ section {
 .section {
   padding: 0 ms(1);
   margin: ms(2) 0;
+  overflow-y: hidden;
   @include screen('tablet') {
     padding: 0 ms(1);
     & > .title {

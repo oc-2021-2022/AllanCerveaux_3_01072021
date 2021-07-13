@@ -6,15 +6,4 @@
   justify-content: center;
   background-color: $white;
   @include box-shadow(1px, 1px, 10px, $grey);
-
-  & > .navbar-brand {
-    a.navbar-item {
-    }
-    @include screen('desktop') {
-      flex-grow: 1;
-    }
-  }
-
-  &a.navbar-item {
-  }
 }
