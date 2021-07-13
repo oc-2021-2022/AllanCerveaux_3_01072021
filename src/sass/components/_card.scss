@@ -86,7 +86,7 @@
   .content {
     width: inherit;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     .title {
       margin: ms(-2) 0;
     }
@@ -95,6 +95,9 @@
     }
     p {
       font-size: ms(0);
+    }
+    @include screen('desktop') {
+      align-items: center;
     }
   }
 }
