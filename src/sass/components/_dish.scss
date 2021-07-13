@@ -1,0 +1,30 @@
+.dish {
+  @include box-shadow(0, 0px, 1em, rgba(0, 0, 0, 0.1));
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  border-radius: ms(0);
+  .content {
+    margin: ms(0);
+    .title,
+    .description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .title {
+      font-weight: 600;
+      margin-top: ms(-3);
+      margin-bottom: ms(-4);
+    }
+    .description {
+      font-size: 0.8em;
+      font-weight: 300;
+    }
+  }
+  overflow: hidden;
+  .price {
+    margin: ms(0);
+    align-self: flex-end;
+  }
+}
