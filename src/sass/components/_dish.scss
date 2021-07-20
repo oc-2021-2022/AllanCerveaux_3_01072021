@@ -1,15 +1,17 @@
-.dish {
+.dish a {
   @include box-shadow(0, 0px, 1em, rgba(0, 0, 0, 0.1));
   display: flex;
   justify-content: space-between;
   background-color: $white;
   border-radius: ms(0);
   overflow: hidden;
+  margin: ms(0) 0;
   .content,
   .price {
     margin: ms(-1) ms(0);
   }
   .content {
+    flex-grow: 1;
     .title,
     .description {
       overflow: hidden;
@@ -22,11 +24,21 @@
       margin-bottom: ms(-4);
     }
     .description {
+      margin: 0;
       font-size: 0.8em;
       font-weight: 300;
     }
   }
   .price {
     align-self: flex-end;
+  }
+  .checked-dish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $accent-color;
+    font-size: 1.3em;
+    color: $white;
+    width: 0;
   }
 }
