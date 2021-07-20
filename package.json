@@ -6,8 +6,8 @@
 	"author": "Callan <cerveauxallanjean@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"start": "parcel src/index.html src/pages/*.html --open",
-		"build": "parcel build src/index.html src/pages/*.html --public-url ./"
+		"start": "parcel src/*.html --open",
+		"build": "parcel build src/*.html --public-url ./"
 	},
 	"devDependencies": {
 		"parcel-bundler": "^1.12.5",
