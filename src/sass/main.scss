@@ -8,12 +8,13 @@
 
 // Import Layout
 @import './layout/hero', './layout/section', './layout/operation', './layout/footer';
+
 // Import Component
 @import './components/navbar', './components/field', './components/button', './components/title',
   './components/text-sizing', './components/card', './components/icon', './components/dish';
 
 // Import Animations
-@import './animations/heart-pop', './animations/loading-spinner', './animations/slide-in';
+@import './animations/heart-pop', './animations/loading-spinner', './animations/slide-in', './animations/selected-dish';
 
 // Import specific page
 @import './pages/restaurant';
