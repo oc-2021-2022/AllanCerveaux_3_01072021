@@ -2,10 +2,6 @@ footer {
   padding: ms(1);
   background-color: $primary-text-color;
   @include screen('desktop') {
-    padding-right: ms(2);
-    padding-left: ms(2);
-  }
-  @include screen('(min-width: 1440px)') {
     padding-right: ms(6);
     padding-left: ms(6);
   }
