@@ -1,0 +1,62 @@
+%fit-content {
+  width: -moz-available;
+  width: -webkit-fill-available;
+}
+.restaurant {
+  h1 {
+    font-size: ms(1);
+    font-family: $text-font-title;
+    flex-grow: 1;
+  }
+  .card {
+    width: 100%;
+    background-color: $white;
+    overflow: hidden;
+    .image {
+      border-radius: unset;
+      overflow: visible;
+      height: ms(7);
+      figcaption {
+        @extend %fit-content;
+        display: flex;
+        align-items: center;
+        color: #000;
+        position: absolute;
+        top: 80%;
+        background-color: $white;
+        padding: ms(0);
+        border-top-left-radius: ms(1) + 0.5;
+        border-top-right-radius: ms(1) + 0.5;
+      }
+      figcaption .icon {
+        margin: 0 ms(-2) 0 0;
+      }
+    }
+    & > .content {
+      position: relative;
+      z-index: 1;
+      margin-top: ms(3);
+      margin-bottom: ms(2);
+      padding: 0 ms(0);
+      border-top-left-radius: ms(0);
+      border-top-right-radius: ms(0);
+      h2 {
+        font-size: ms(0);
+        font-weight: 400;
+        border-bottom: $accent-color ms(-4) solid;
+        width: ms(2);
+        padding-bottom: ms(-3);
+      }
+    }
+  }
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  margin-bottom: ms(2);
+  .button {
+    padding-left: ms(3);
+    padding-right: ms(3);
+  }
+}

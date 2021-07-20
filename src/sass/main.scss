@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap');
-
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 // Import configuration helpers
@@ -10,11 +8,13 @@
 
 // Import Layout
 @import './layout/hero', './layout/section', './layout/operation', './layout/footer';
+
 // Import Component
 @import './components/navbar', './components/field', './components/button', './components/title',
-  './components/text-sizing', './components/card', './components/icon';
+  './components/text-sizing', './components/card', './components/icon', './components/dish';
 
 // Import Animations
-@import './animations/heart-pop', './animations/loading-spinner', './animations/slide-in';
+@import './animations/heart-pop', './animations/loading-spinner', './animations/slide-in', './animations/selected-dish';
 
 // Import specific page
+@import './pages/restaurant';
