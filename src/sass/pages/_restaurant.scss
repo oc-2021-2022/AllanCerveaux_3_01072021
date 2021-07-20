@@ -33,11 +33,11 @@
       }
     }
     & > .content {
-      position: relative;
       z-index: 1;
+      position: relative;
+      padding: 0 ms(0);
       margin-top: ms(3);
       margin-bottom: ms(2);
-      padding: 0 ms(0);
       border-top-left-radius: ms(0);
       border-top-right-radius: ms(0);
       h2 {
@@ -50,7 +50,9 @@
     }
   }
 }
-
+.navbar .back-arrow {
+  font-size: ms(0);
+}
 .order {
   display: flex;
   justify-content: center;
