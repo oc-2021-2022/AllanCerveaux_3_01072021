@@ -1,39 +1,4 @@
-$bubble-d: 1.7em;
-$bubble-r: 0.5 * $bubble-d;
-
-@mixin bubble($ext) {
-  border-color: $secondary-color;
-  border-width: $ext;
-  transform: scale(1);
-}
-
 @mixin hearth-pop() {
-  & > .bubble {
-    &:before,
-    &:after {
-      position: absolute;
-      z-index: 0;
-      bottom: 0;
-      right: 0;
-      border-radius: 50%;
-      content: '';
-      animation: bubble 1s cubic-bezier(0.21, 0.61, 0.35, 1) both;
-    }
-    &:before {
-      will-change: transform, border-width, border-color;
-      animation-name: bubble;
-      box-sizing: border-box;
-      margin: -0.2em -0.35em;
-      border: solid $bubble-r $primary-color;
-      width: $bubble-d;
-      height: $bubble-d;
-      transform: scale(0);
-    }
-    &:after {
-      will-change: opacity, box-shadow;
-      animation-name: particles;
-    }
-  }
   & > i {
     position: relative;
     color: $primary-color;
@@ -52,16 +17,6 @@ $bubble-r: 0.5 * $bubble-d;
       opacity: 1;
       font-weight: 900;
       color: $primary-color;
-    }
-  }
-
-  @keyframes bubble {
-    15% {
-      @include bubble($bubble-r);
-    }
-    30%,
-    100% {
-      @include bubble(0);
     }
   }
 }
