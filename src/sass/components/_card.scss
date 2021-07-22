@@ -30,7 +30,7 @@
       .card-body {
         background-color: $primary-color-alpha-30;
       }
-      span.icon {
+      div.icon {
         color: $primary-color;
       }
     }
@@ -86,11 +86,11 @@
   .content {
     width: inherit;
     display: flex;
-    align-items: stretch;
+    align-items: baseline;
     .title {
       margin: ms(-2) 0;
     }
-    span.icon {
+    div.icon {
       color: $dark-grey;
     }
     p {
