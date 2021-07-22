@@ -55,7 +55,7 @@
     border-radius: inherit;
     overflow: hidden;
     @include screen('desktop') {
-      height: ms(8);
+      height: ms(7);
     }
     img {
       width: 100%;
@@ -78,7 +78,7 @@
 .card-body {
   @extend %card-item;
   @include box-shadow(0, 10px, 8px, rgba(0, 0, 0, 0.1));
-  padding: ms(0) 0;
+  padding: ms(0);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,7 +86,7 @@
   .content {
     width: inherit;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     .title {
       margin: ms(-2) 0;
     }
@@ -105,7 +105,6 @@
 .has-vertical {
   flex-direction: column;
   align-items: start !important;
-  padding: 0 ms(0);
 }
 .steps {
   position: relative;
@@ -121,7 +120,7 @@
       right: 97%;
     }
     @include screen('desktop') {
-      right: 98%;
+      right: 96%;
     }
   }
 }
