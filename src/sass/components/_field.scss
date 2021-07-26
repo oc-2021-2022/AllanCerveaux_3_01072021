@@ -14,7 +14,8 @@
     input[type='text'].input {
       border: none;
       background-color: transparent;
-      @include font-style(ms(0), 600);
+      font-size: ms(0);
+      font-weight: 600;
     }
   }
 }

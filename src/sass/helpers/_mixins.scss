@@ -66,14 +66,6 @@
   }
 }
 
-/**
- *
- */
-@mixin font-style($font-size, $font-weight) {
-  font-size: $font-size;
-  font-weight: $font-weight;
-}
-
 @mixin transition {
   @for $i from 1 through 5 {
     &:nth-child(#{$i}) {
